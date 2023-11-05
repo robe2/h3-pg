@@ -9,7 +9,32 @@ This library provides PostgreSQL bindings for the [H3 Core Library](https://gith
 
 Developed in collaboration with [Scandinavian Highlands](http://www.scandinavian-highlands.com).
 
-## Prerequisites
+## Binary distributions
+These don't require you have the development headers or cmake
+
+### Debian/Ubuntu
+Replace 16 with your postgresql version
+Also detailed [PGDG Ubuntu](https://www.postgresql.org/download/linux/ubuntu/) and [PGDG Ubuntu](https://www.postgresql.org/download/linux/debian/)
+```
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main 16" > /etc/apt/sources.list.d/pgdg.list'
+sudo curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg >/dev/null
+sudo apt update
+sudo apt install postgresql-16-h3
+```
+
+### Redhat Derivatives (Rocky / EL 8+ / CentOS 8+)
+Replace 16 with your postgresql version
+Refer to [Redhat Yum.postgresql.org](https://www.postgresql.org/download/linux/redhat/) for installing PostgreSQL
+```
+yum install h3-pg_16
+```
+
+### Windows
+
+Included as part of PostGIS Bundle 3.3+ for PostgreSQL 11-16
+Details: [postgis.net windows](https://postgis.net/documentation/getting_started/install_windows/released_versions/)  
+
+## Compiling Prerequisites
 
 - PostgreSQL 11+ (_including server headers_, e.g. `postgresql-server-dev-14`)
 - C compiler (e.g., `gcc`)
