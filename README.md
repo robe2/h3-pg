@@ -15,13 +15,15 @@ These don't require you have the development headers or cmake installed.
 ### Debian/Ubuntu
 Replace 16 with your postgresql version.
 Refer to [PGDG Ubuntu](https://www.postgresql.org/download/linux/ubuntu/) and [PGDG Ubuntu](https://www.postgresql.org/download/linux/debian/) for installing PostgreSQL
+More details about the various packages at https://apt.postgresql.org
 ```
 sudo apt install postgresql-16-h3
 ```
 
 ### Redhat Derivatives (Rocky / EL 8+ / Fedora 37+)
 Replace 16 with your postgresql version
-Refer to [Redhat Yum.postgresql.org](https://www.postgresql.org/download/linux/redhat/) for installing PostgreSQL
+Refer to [PGDG Redhat Derivatives](https://www.postgresql.org/download/linux/redhat/) for installing PostgreSQL.
+More details about the various packages at https://yum.postgresql.org
 ```
 sudo yum install h3-pg_16
 ```
