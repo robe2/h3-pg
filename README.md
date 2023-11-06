@@ -19,7 +19,7 @@ Refer to [PGDG Ubuntu](https://www.postgresql.org/download/linux/ubuntu/) and [P
 sudo apt install postgresql-16-h3
 ```
 
-### Redhat Derivatives (Rocky / EL 8+ / Fedora 37+ / CentOS 8+)
+### Redhat Derivatives (Rocky / EL 8+ / Fedora 37+)
 Replace 16 with your postgresql version
 Refer to [Redhat Yum.postgresql.org](https://www.postgresql.org/download/linux/redhat/) for installing PostgreSQL
 ```
